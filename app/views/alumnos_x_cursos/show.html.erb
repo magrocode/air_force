@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Curso:</b>
+  <%= @alumnos_x_curso.curso_id %>
+</p>
+
+<p>
+  <b>Alumno:</b>
+  <%= @alumnos_x_curso.alumno_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_alumnos_x_curso_path(@alumnos_x_curso) %> |
+<%= link_to 'Back', alumnos_x_cursos_path %>

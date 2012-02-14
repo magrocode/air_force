@@ -1,0 +1,25 @@
+<h1>Listing alumnos_x_cursos</h1>
+
+<table>
+  <tr>
+    <th>Curso</th>
+    <th>Alumno</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alumnos_x_cursos.each do |alumnos_x_curso| %>
+  <tr>
+    <td><%= alumnos_x_curso.curso.codigo %></td>
+    <td><%= alumnos_x_curso.alumno.apellido_paterno + " " + alumnos_x_curso.alumno.apellido_materno + " " + alumnos_x_curso.alumno.nombres %></td>
+    <td><%= link_to 'Show', alumnos_x_curso %></td>
+    <td><%= link_to 'Edit', edit_alumnos_x_curso_path(alumnos_x_curso) %></td>
+    <td><%= link_to 'Destroy', alumnos_x_curso, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alumnos x curso', new_alumnos_x_curso_path %>

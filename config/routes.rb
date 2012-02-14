@@ -1,4 +1,6 @@
 AirForce::Application.routes.draw do
+  resources :alumnos_x_cursos
+
   resources :asignatura_x_cursos
 
   resources :cursos
