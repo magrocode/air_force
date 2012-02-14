@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120214164006) do
+ActiveRecord::Schema.define(:version => 20120214192816) do
 
   create_table "alumnos", :force => true do |t|
     t.string   "rut"
@@ -37,6 +37,9 @@ ActiveRecord::Schema.define(:version => 20120214164006) do
     t.string   "titulo"
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
+    t.string   "nombres"
+    t.string   "apellido_paterno"
+    t.string   "apellido_materno"
   end
 
 end
