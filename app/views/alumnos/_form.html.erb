@@ -1,0 +1,101 @@
+<%= form_for(@alumno) do |f| %>
+  <% if @alumno.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alumno.errors.count, "error") %> prohibited this alumno from being saved:</h2>
+
+      <ul>
+      <% @alumno.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rut %><br />
+    <%= f.text_field :rut %>
+  </div>
+  <div class="field">
+    <%= f.label :numero_empleado %><br />
+    <%= f.number_field :numero_empleado %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_nacimiento %><br />
+    <%= f.date_select :fecha_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :grupo_sanguineo %><br />
+    <%= f.text_field :grupo_sanguineo %>
+  </div>
+  <div class="field">
+    <%= f.label :servicio_militar %><br />
+    <%= f.check_box :servicio_militar %>
+  </div>
+  <div class="field">
+    <%= f.label :lugar_servicio_militar %><br />
+    <%= f.text_field :lugar_servicio_militar %>
+  </div>
+  <div class="field">
+    <%= f.label :inscripcion_electoral %><br />
+    <%= f.check_box :inscripcion_electoral %>
+  </div>
+  <div class="field">
+    <%= f.label :circunscripcion %><br />
+    <%= f.text_field :circunscripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_ingreso %><br />
+    <%= f.date_select :fecha_ingreso %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_egreso %><br />
+    <%= f.date_select :fecha_egreso %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion_particular %><br />
+    <%= f.text_field :direccion_particular %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_fijo %><br />
+    <%= f.number_field :telefono_fijo %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono_celular %><br />
+    <%= f.number_field :telefono_celular %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :psu %><br />
+    <%= f.check_box :psu %>
+  </div>
+  <div class="field">
+    <%= f.label :puntaje_psu %><br />
+    <%= f.number_field :puntaje_psu %>
+  </div>
+  <div class="field">
+    <%= f.label :establecimiento_ensenanza_media %><br />
+    <%= f.text_field :establecimiento_ensenanza_media %>
+  </div>
+  <div class="field">
+    <%= f.label :anios_ensenanza_media %><br />
+    <%= f.number_field :anios_ensenanza_media %>
+  </div>
+  <div class="field">
+    <%= f.label :establecimiento_superior %><br />
+    <%= f.text_field :establecimiento_superior %>
+  </div>
+  <div class="field">
+    <%= f.label :anios_superior %><br />
+    <%= f.number_field :anios_superior %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

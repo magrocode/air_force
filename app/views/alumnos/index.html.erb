@@ -1,0 +1,63 @@
+<h1>Listing alumnos</h1>
+
+<table>
+  <tr>
+    <th>Rut</th>
+    <th>Numero empleado</th>
+    <th>Fecha nacimiento</th>
+    <th>Grupo sanguineo</th>
+    <th>Servicio militar</th>
+    <th>Lugar servicio militar</th>
+    <th>Inscripcion electoral</th>
+    <th>Circunscripcion</th>
+    <th>Fecha ingreso</th>
+    <th>Fecha egreso</th>
+    <th>Direccion particular</th>
+    <th>Telefono fijo</th>
+    <th>Telefono celular</th>
+    <th>Email</th>
+    <th>Psu</th>
+    <th>Puntaje psu</th>
+    <th>Establecimiento ensenanza media</th>
+    <th>Anios ensenanza media</th>
+    <th>Establecimiento superior</th>
+    <th>Anios superior</th>
+    <th>Titulo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alumnos.each do |alumno| %>
+  <tr>
+    <td><%= alumno.rut %></td>
+    <td><%= alumno.numero_empleado %></td>
+    <td><%= alumno.fecha_nacimiento %></td>
+    <td><%= alumno.grupo_sanguineo %></td>
+    <td><%= alumno.servicio_militar %></td>
+    <td><%= alumno.lugar_servicio_militar %></td>
+    <td><%= alumno.inscripcion_electoral %></td>
+    <td><%= alumno.circunscripcion %></td>
+    <td><%= alumno.fecha_ingreso %></td>
+    <td><%= alumno.fecha_egreso %></td>
+    <td><%= alumno.direccion_particular %></td>
+    <td><%= alumno.telefono_fijo %></td>
+    <td><%= alumno.telefono_celular %></td>
+    <td><%= alumno.email %></td>
+    <td><%= alumno.psu %></td>
+    <td><%= alumno.puntaje_psu %></td>
+    <td><%= alumno.establecimiento_ensenanza_media %></td>
+    <td><%= alumno.anios_ensenanza_media %></td>
+    <td><%= alumno.establecimiento_superior %></td>
+    <td><%= alumno.anios_superior %></td>
+    <td><%= alumno.titulo %></td>
+    <td><%= link_to 'Show', alumno %></td>
+    <td><%= link_to 'Edit', edit_alumno_path(alumno) %></td>
+    <td><%= link_to 'Destroy', alumno, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alumno', new_alumno_path %>

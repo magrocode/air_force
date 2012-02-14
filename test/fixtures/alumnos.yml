@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rut: MyString
+  numero_empleado: 1
+  fecha_nacimiento: 2012-02-14
+  grupo_sanguineo: MyString
+  servicio_militar: false
+  lugar_servicio_militar: MyString
+  inscripcion_electoral: false
+  circunscripcion: MyString
+  fecha_ingreso: 2012-02-14
+  fecha_egreso: 2012-02-14
+  direccion_particular: MyString
+  telefono_fijo: 1
+  telefono_celular: 1
+  email: MyString
+  psu: false
+  puntaje_psu: 1
+  establecimiento_ensenanza_media: MyString
+  anios_ensenanza_media: 1
+  establecimiento_superior: MyString
+  anios_superior: 1
+  titulo: MyString
+
+two:
+  rut: MyString
+  numero_empleado: 1
+  fecha_nacimiento: 2012-02-14
+  grupo_sanguineo: MyString
+  servicio_militar: false
+  lugar_servicio_militar: MyString
+  inscripcion_electoral: false
+  circunscripcion: MyString
+  fecha_ingreso: 2012-02-14
+  fecha_egreso: 2012-02-14
+  direccion_particular: MyString
+  telefono_fijo: 1
+  telefono_celular: 1
+  email: MyString
+  psu: false
+  puntaje_psu: 1
+  establecimiento_ensenanza_media: MyString
+  anios_ensenanza_media: 1
+  establecimiento_superior: MyString
+  anios_superior: 1
+  titulo: MyString
