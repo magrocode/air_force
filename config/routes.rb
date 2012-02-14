@@ -1,4 +1,6 @@
 AirForce::Application.routes.draw do
+  resources :cursos
+
   resources :asignaturas
 
   resources :profesors

@@ -1,0 +1,31 @@
+<h1>Listing cursos</h1>
+
+<table>
+  <tr>
+    <th>Codigo</th>
+    <th>Anio</th>
+    <th>Semestre</th>
+    <th>Area</th>
+    <th>Especialidad</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cursos.each do |curso| %>
+  <tr>
+    <td><%= curso.codigo %></td>
+    <td><%= curso.anio %></td>
+    <td><%= curso.semestre %></td>
+    <td><%= curso.area %></td>
+    <td><%= curso.especialidad %></td>
+    <td><%= link_to 'Show', curso %></td>
+    <td><%= link_to 'Edit', edit_curso_path(curso) %></td>
+    <td><%= link_to 'Destroy', curso, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Curso', new_curso_path %>

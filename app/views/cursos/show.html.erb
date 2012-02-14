@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @curso.codigo %>
+</p>
+
+<p>
+  <b>Anio:</b>
+  <%= @curso.anio %>
+</p>
+
+<p>
+  <b>Semestre:</b>
+  <%= @curso.semestre %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @curso.area %>
+</p>
+
+<p>
+  <b>Especialidad:</b>
+  <%= @curso.especialidad %>
+</p>
+
+
+<%= link_to 'Edit', edit_curso_path(@curso) %> |
+<%= link_to 'Back', cursos_path %>
