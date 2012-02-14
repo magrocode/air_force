@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :fecha_nacimiento %><br />
-    <%= f.date_select :fecha_nacimiento %>
+    <%= f.date_select :fecha_nacimiento, :order => [:day, :month, :year], :start_year => 1900 %>
   </div>
   <div class="field">
     <%= f.label :grupo_sanguineo %><br />
@@ -57,11 +57,11 @@
   </div>
   <div class="field">
     <%= f.label :fecha_ingreso %><br />
-    <%= f.date_select :fecha_ingreso %>
+    <%= f.date_select :fecha_ingreso, :order => [:day, :month, :year], :start_year => 1900 %>
   </div>
   <div class="field">
     <%= f.label :fecha_egreso %><br />
-    <%= f.date_select :fecha_egreso %>
+    <%= f.date_select :fecha_egreso, :order => [:day, :month, :year], :start_year => 1900 %>
   </div>
   <div class="field">
     <%= f.label :direccion_particular %><br />
