@@ -1,0 +1,41 @@
+<%= form_for(@anotacion) do |f| %>
+  <% if @anotacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@anotacion.errors.count, "error") %> prohibited this anotacion from being saved:</h2>
+
+      <ul>
+      <% @anotacion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :anotacion %><br />
+    <%= f.text_area :anotacion %>
+  </div>
+  <div class="field">
+    <%= f.label :meritos %><br />
+    <%= f.number_field :meritos %>
+  </div>
+  <div class="field">
+    <%= f.label :demeritos %><br />
+    <%= f.number_field :demeritos %>
+  </div>
+  <div class="field">
+    <%= f.label :calificador %><br />
+    <%= f.text_field :calificador %>
+  </div>
+  <div class="field">
+    <%= f.label :alumno_id %><br />
+    <%= f.collection_select :alumno_id, Alumno.all, :id, :rut, :prompt => 'Selecciona un alumno' %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

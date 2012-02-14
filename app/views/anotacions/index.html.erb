@@ -1,0 +1,33 @@
+<h1>Listing anotacions</h1>
+
+<table>
+  <tr>
+    <th>Fecha</th>
+    <th>Anotacion</th>
+    <th>Meritos</th>
+    <th>Demeritos</th>
+    <th>Calificador</th>
+    <th>Alumno</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @anotacions.each do |anotacion| %>
+  <tr>
+    <td><%= anotacion.fecha %></td>
+    <td><%= anotacion.anotacion %></td>
+    <td><%= anotacion.meritos %></td>
+    <td><%= anotacion.demeritos %></td>
+    <td><%= anotacion.calificador %></td>
+    <td><%= anotacion.alumno.apellido_paterno + " " + anotacion.alumno.apellido_materno + " " + anotacion.alumno.nombres %></td>
+    <td><%= link_to 'Show', anotacion %></td>
+    <td><%= link_to 'Edit', edit_anotacion_path(anotacion) %></td>
+    <td><%= link_to 'Destroy', anotacion, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Anotacion', new_anotacion_path %>

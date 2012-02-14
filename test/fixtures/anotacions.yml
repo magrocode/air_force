@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fecha: 2012-02-14
+  anotacion: MyText
+  meritos: 1
+  demeritos: 1
+  calificador: MyString
+  alumno_id: 1
+
+two:
+  fecha: 2012-02-14
+  anotacion: MyText
+  meritos: 1
+  demeritos: 1
+  calificador: MyString
+  alumno_id: 1

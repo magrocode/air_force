@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @anotacion.fecha %>
+</p>
+
+<p>
+  <b>Anotacion:</b>
+  <%= @anotacion.anotacion %>
+</p>
+
+<p>
+  <b>Meritos:</b>
+  <%= @anotacion.meritos %>
+</p>
+
+<p>
+  <b>Demeritos:</b>
+  <%= @anotacion.demeritos %>
+</p>
+
+<p>
+  <b>Calificador:</b>
+  <%= @anotacion.calificador %>
+</p>
+
+<p>
+  <b>Alumno:</b>
+  <%= @anotacion.alumno.apellido_paterno + " " + @anotacion.alumno.apellido_materno + " " +@anotacion.alumno.nombres %>
+</p>
+
+
+<%= link_to 'Edit', edit_anotacion_path(@anotacion) %> |
+<%= link_to 'Back', anotacions_path %>
