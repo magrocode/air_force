@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @asignatura.codigo %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @asignatura.nombre %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @asignatura.tipo %>
+</p>
+
+<p>
+  <b>Numero notas parciales:</b>
+  <%= @asignatura.numero_notas_parciales %>
+</p>
+
+<p>
+  <b>Examen:</b>
+  <%= @asignatura.examen %>
+</p>
+
+
+<%= link_to 'Edit', edit_asignatura_path(@asignatura) %> |
+<%= link_to 'Back', asignaturas_path %>

@@ -1,4 +1,8 @@
 AirForce::Application.routes.draw do
+  resources :asignaturas
+
+  resources :profesors
+
   resources :alumnos
 
   # The priority is based upon order of creation:

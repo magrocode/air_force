@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  nombre: MyString
+  tipo: MyString
+  numero_notas_parciales: 1
+  examen: false
+
+two:
+  codigo: MyString
+  nombre: MyString
+  tipo: MyString
+  numero_notas_parciales: 1
+  examen: false
