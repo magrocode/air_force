@@ -1,4 +1,8 @@
 AirForce::Application.routes.draw do
+  #get "static_pages/home"
+
+  #get "static_pages/about"
+
   resources :servicios
 
   resources :anotacions
@@ -14,6 +18,12 @@ AirForce::Application.routes.draw do
   resources :profesors
 
   resources :alumnos
+
+  match '/about', :to => 'static_pages#about'
+    
+  root :to => 'static_pages#home'
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
